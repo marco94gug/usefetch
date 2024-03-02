@@ -1,0 +1,9 @@
+{
+  "name": "@fish/usefetch",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "semantic-release": "^23.0.2",
+    "tsup": "^8.0.2"
+  }
+}
