@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "semantic-release": "^23.0.2",
     "tsup": "^8.0.2"
+  },
+  "devDependencies": {
+    "semantic-release": "^23.0.2"
   }
 }
