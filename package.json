@@ -1,6 +1,6 @@
 {
   "name": "@fish/usefetch",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "type": "module",
   "dependencies": {
     "tsup": "^8.0.2"
@@ -20,6 +20,11 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "semantic-release": "semantic-release --branches main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marco94gug/usefetch.git"
   }
 }
