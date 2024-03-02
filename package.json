@@ -13,8 +13,11 @@
     "@semantic-release/release-notes-generator": "^12.1.0",
     "semantic-release": "^23.0.2"
   },
-    "publishConfig": {
-      "registry": "https://registry.npmjs.org/",
-      "tag": "latest"
-    }
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
 }
