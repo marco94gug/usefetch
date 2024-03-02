@@ -18,7 +18,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
+    "tag": "latest",
+    "access": "public"
   },
   "scripts": {
     "build": "tsc",
@@ -28,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marco94gug/usefetch.git"
+    "url": "git+https://github.com/marco94gug/usefetch.git"
   },
   "config": {
     "commitizen": {
