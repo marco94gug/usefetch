@@ -1,8 +1,4 @@
-export interface OptionsFetch {
-  baseURL: string;
-  headers?: Record<string, string>;
-  params?: Record<string, string | unknown[]>;
-}
+import { OptionsFetch } from "./types/useFetch.types";
 
 export const useFetch = async <T>(url: string, options?: OptionsFetch) => {
   try {
