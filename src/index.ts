@@ -47,6 +47,7 @@ export const useFetch = async <T>(url: string, options?: OptionsFetch) => {
       responseHeaders[pair[0]] = pair[1];
     }
 
+    // resolve json response
     const data = await res.json();
 
     return { data, response: { headers: responseHeaders } } as {
