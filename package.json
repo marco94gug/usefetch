@@ -1,6 +1,6 @@
 {
-  "name": "fishdev-usefetch",
-  "version": "1.0.0",
+  "name": "@fishdeveloper/usefetch",
+  "version": "1.0.0-beta.1",
   "type": "module",
   "dependencies": {
     "tsup": "^8.0.2"
@@ -26,7 +26,7 @@
     "build": "tsc",
     "test": "vitest --run",
     "commit": "git-cz",
-    "semantic-release": "semantic-release --branches main"
+    "semantic-release": "semantic-release --branches main beta"
   },
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
       "main",
       {
         "name": "beta",
-        "prerelease": true
+        "prerelease": "beta"
       }
     ],
     "plugins": [
@@ -50,7 +50,12 @@
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/git",
-      "@semantic-release/github"
+      [
+        "@semantic-release/github",
+        {
+          "assets": "dist/*"
+        }
+      ]
     ],
     "preset": "angular"
   }
