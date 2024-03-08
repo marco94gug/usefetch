@@ -12,6 +12,7 @@ export const useFetch = async <T>(url: string, options?: OptionsFetch) => {
         )
       );
 
+    // search params
     const serializeSearchParams =
       params &&
       Object.entries(params)
